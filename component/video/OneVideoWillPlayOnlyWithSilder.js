@@ -38,15 +38,15 @@ const OneVideoWillPlayOnlyWithSilder = () => {
     },
     {
       name: "Rahul",
-      video: "/video/review2.mp4",
+      video: "/video/review1.mp4",
     },
     {
       name: "Prem Lata",
-      video: "/video/review3.mp4",
+      video: "/video/review1.mp4",
     },
     {
       name: "Raman Gupta",
-      video: "/video/review4.mp4",
+      video: "/video/review1.mp4",
     },
   ];
 
