@@ -1,11 +1,15 @@
-import store from "@/store";
+import { store1, store2 } from "@/store";
 import { useHookstate } from "@hookstate/core";
-import React from "react";
 
 const ComponentB = () => {
-  const mymsg = useHookstate(store.msg);
+  const data1 = useHookstate(store1.msg);
+  const data2 = useHookstate(store2.msg);
 
-  return <div>ComponentB - {mymsg.get()}</div>;
+  return (
+    <div>
+      ComponentA - {data1.get()}- {data2.get()}
+    </div>
+  );
 };
 
 export default ComponentB;

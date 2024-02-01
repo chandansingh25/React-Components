@@ -1,7 +1,11 @@
 import { hookstate } from "@hookstate/core";
 
-const store = hookstate({
+const store1 = hookstate({
+  msg: "Hello",
+});
+
+const store2 = hookstate({
   msg: "Hello World",
 });
 
-export default store;
+export { store1, store2 };

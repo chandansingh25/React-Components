@@ -8,6 +8,7 @@ import FormWithYup from "./Form/FormWithYup";
 import CalcWrap from "./Form/Calc/CalcWrap";
 import ReviewImageUpload from "./ImageUpload/ReviewImageUpload";
 import HeroSection from "./Form/Hero/HeroSection";
+import TicTacToe from "./Game/TicTacToe/TicTacToe";
 
 const MainTab = () => {
   return (
@@ -35,10 +36,13 @@ const MainTab = () => {
                 Multi Image Upload
               </Nav.Link>
             </Nav.Item>
+            <Nav.Item>
+              <Nav.Link eventKey="tictactoe">TicTacToe</Nav.Link>
+            </Nav.Item>
           </Nav>
         </Col>
         <Col sm={9}>
-          <Tab.Content className="p-4 rounded bg-light">
+          <Tab.Content className="p-4 rounded bg-light vh-100">
             <Tab.Pane eventKey="hero">
               <HeroSection />
             </Tab.Pane>
@@ -67,6 +71,10 @@ const MainTab = () => {
                 One Video Will Play at One Time in Slider
               </h5>
               <ReviewImageUpload />
+            </Tab.Pane>
+            <Tab.Pane eventKey="tictactoe">
+              <h5 className="text-center mb-3">TicTacToe</h5>
+              <TicTacToe />
             </Tab.Pane>
           </Tab.Content>
         </Col>
